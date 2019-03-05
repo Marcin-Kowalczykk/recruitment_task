@@ -60,7 +60,7 @@ to wyślij paczkę na adres ``scrum-websites@edpauto.com``
 - jeżeli nie możesz poradzić sobie z jakimś problemem, zapisz go sobie na boku i spróbuj ruszyć dalej,
 być może uda nam się wspólnie rozwiązać dany problem w kolejnym etapie
 - nawet jeżeli aplikacja nie będzie do końca działająca, wyślij nam swój kod
-- jeżeli opis zadania jest dla Ciebie nie jasny, napisz na adres ``scrum-websites@edpauto.com``, postaramy
+- jeżeli opis zadania jest dla Ciebie niejasny, napisz na adres ``scrum-websites@edpauto.com``, postaramy
 się odpowiedzieć na pytania
 - styl kodowania css - preferujemy wcięcia na dwie spacje
 - styl kodowania js - postaraj trzymać się zasad opisanych na ``https://standardjs.com/``  
