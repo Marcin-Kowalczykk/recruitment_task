@@ -16,7 +16,7 @@ Na pojedynczy samochód składają się następujące informacje:
 - marka
 - model
 - oznaczenie silnika
-- nazwa modelu (ciąg znaków złożony wg wzoru : marka model pojemność silnika)
+- nazwa modelu (ciąg znaków złożony wg wzoru : marka model oznaczenie silnika)
 - **dostępność** (dostępne wartości: tak/nie)
 
 Jeżeli samochód jest niedostępny, cały wiersz listy powinien podświetlać się na czerwono.
@@ -48,6 +48,7 @@ Podejmiemy się oceny Twojego kodu pod kątem:
 - znajomości języka i wachlarz funkcji natywnych które używasz
 - ustruktyryzowania i organizacji kodu w plikach
 - dbanie o czytelność kodu
+- zgodność rozwiązania z treścią zadania
 
 ### Wskazówki
 
@@ -64,4 +65,4 @@ się odpowiedzieć na pytania
 - styl kodowania css - preferujemy wcięcia na dwie spacje
 - styl kodowania js - postaraj trzymać się zasad opisanych na ``https://standardjs.com/``  
   
-Pozdrawiamy
+Powodzenia
