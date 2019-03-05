@@ -11,7 +11,8 @@ rozwinąć tę aplikację oraz omówić ewnentualne problemy, które napotkała�
 ### Opis aplikacji
 
 Potrzebujemy aplikacji napisanej w języku **javascript**, która prezentuje listę samochodów bazując na pliku _data.json_.  
-Na pojedynczy samochód składają się następujące informacje:
+Na pojedynczy samochód składają się następujące informacje:  
+
 - zdjęcie
 - marka
 - model
@@ -44,7 +45,8 @@ Jeżeli chodzi o wygląd przycisków, pozostawiamy wolną rękę, chętnie zobac
 
 ### Kryteria oceny
 
-Podejmiemy się oceny Twojego kodu pod kątem: 
+Podejmiemy się oceny Twojego kodu pod kątem:  
+
 - znajomości języka i wachlarz funkcji natywnych które używasz
 - ustruktyryzowania i organizacji kodu w plikach
 - dbanie o czytelność kodu
