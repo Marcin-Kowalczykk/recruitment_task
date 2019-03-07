@@ -11,12 +11,13 @@ rozwinąć tę aplikację oraz omówić ewnentualne problemy, które napotkała�
 ### Opis aplikacji
 
 Potrzebujemy aplikacji napisanej w języku **javascript**, która prezentuje listę samochodów bazując na pliku _data.json_.  
-Na pojedynczy samochód składają się następujące informacje:
+Na pojedynczy samochód składają się następujące informacje:  
+
 - zdjęcie
 - marka
 - model
 - oznaczenie silnika
-- nazwa modelu (ciąg znaków złożony wg wzoru : marka model pojemność silnika)
+- nazwa modelu (ciąg znaków złożony wg wzoru : marka model oznaczenie silnika)
 - **dostępność** (dostępne wartości: tak/nie)
 
 Jeżeli samochód jest niedostępny, cały wiersz listy powinien podświetlać się na czerwono.
@@ -29,6 +30,11 @@ który, po kliknięciu powoduje usunięcie auta z listy.
   
 Aplikacja na tym etapie testowana będzie tylko na przeglądarce chrome, 
 nie uwzględniamy urządzeń mobilnych.
+
+Do napisania aplikacji użyj składni ECMA Script 6 oraz najnowszej wersji jednego z 3 frameworków :
+- React
+- Angular
+- Vue.js
 
 ### Wygląd
 
@@ -44,24 +50,24 @@ Jeżeli chodzi o wygląd przycisków, pozostawiamy wolną rękę, chętnie zobac
 
 ### Kryteria oceny
 
-Podejmiemy się oceny Twojego kodu pod kątem: 
+Podejmiemy się oceny Twojego kodu pod kątem:  
+
 - znajomości języka i wachlarz funkcji natywnych które używasz
 - ustruktyryzowania i organizacji kodu w plikach
 - dbanie o czytelność kodu
+- zgodność rozwiązania z treścią zadania
 
 ### Wskazówki
 
 - jeżeli korzystasz z sass'a, do budowania wynikowego css'a idealnie byłoby użyć webpacka, 
-jeżeli użyjesz czegoś innego opisz nam jak zbudować aplikację
+jeżeli użyjesz czegoś innego opisz nam w README jak zbudować aplikację
 - niezbędne będzie użycie AJAX'a do pobrania danych z pliku json
-- jeżeli pracujesz z GIT'em, udostępnij nam kod na gitlabie / bitbuckecie lub githubie i wyślij link, jeżeli nie,
-to wyślij paczkę na adres ``scrum-websites@edpauto.com``  
 - jeżeli nie możesz poradzić sobie z jakimś problemem, zapisz go sobie na boku i spróbuj ruszyć dalej,
 być może uda nam się wspólnie rozwiązać dany problem w kolejnym etapie
 - nawet jeżeli aplikacja nie będzie do końca działająca, wyślij nam swój kod
-- jeżeli opis zadania jest dla Ciebie nie jasny, napisz na adres ``scrum-websites@edpauto.com``, postaramy
+- jeżeli opis zadania jest dla Ciebie niejasny, napisz na adres ``scrum-websites@edpauto.com``, postaramy
 się odpowiedzieć na pytania
 - styl kodowania css - preferujemy wcięcia na dwie spacje
 - styl kodowania js - postaraj trzymać się zasad opisanych na ``https://standardjs.com/``  
   
-Pozdrawiamy
+Powodzenia
