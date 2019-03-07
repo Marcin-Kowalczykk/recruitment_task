@@ -31,6 +31,11 @@ który, po kliknięciu powoduje usunięcie auta z listy.
 Aplikacja na tym etapie testowana będzie tylko na przeglądarce chrome, 
 nie uwzględniamy urządzeń mobilnych.
 
+Do napisania aplikacji użyj składni ECMA Script 6 oraz najnowszej wersji jednego z 3 frameworków :
+- React
+- Angular
+- Vue.js
+
 ### Wygląd
 
 Wygląd list w formie tabelki prezentuje plik _datagrid.png_, prosimy o zaimplementowanie takiego stylu listy.
@@ -55,10 +60,8 @@ Podejmiemy się oceny Twojego kodu pod kątem:
 ### Wskazówki
 
 - jeżeli korzystasz z sass'a, do budowania wynikowego css'a idealnie byłoby użyć webpacka, 
-jeżeli użyjesz czegoś innego opisz nam jak zbudować aplikację
+jeżeli użyjesz czegoś innego opisz nam w README jak zbudować aplikację
 - niezbędne będzie użycie AJAX'a do pobrania danych z pliku json
-- jeżeli pracujesz z GIT'em, udostępnij nam kod na gitlabie / bitbuckecie lub githubie i wyślij link, jeżeli nie,
-to wyślij paczkę na adres ``scrum-websites@edpauto.com``  
 - jeżeli nie możesz poradzić sobie z jakimś problemem, zapisz go sobie na boku i spróbuj ruszyć dalej,
 być może uda nam się wspólnie rozwiązać dany problem w kolejnym etapie
 - nawet jeżeli aplikacja nie będzie do końca działająca, wyślij nam swój kod
