@@ -53,9 +53,9 @@ Jeżeli chodzi o wygląd przycisków, pozostawiamy wolną rękę, chętnie zobac
 Podejmiemy się oceny Twojego kodu pod kątem:  
 
 - znajomości języka i wachlarz funkcji natywnych które używasz
-- ustruktyryzowania i organizacji kodu w plikach
-- dbanie o czytelność kodu
-- zgodność rozwiązania z treścią zadania
+- ustrukturyzowania i organizacji kodu w plikach
+- dbania o czytelność kodu
+- zgodności rozwiązania z treścią zadania
 
 ### Wskazówki
 
