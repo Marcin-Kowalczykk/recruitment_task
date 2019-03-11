@@ -8,6 +8,9 @@ Po otrzymaniu Twojego kodu, który ma być odpowiedzią na poniższe zadanie bę
 Twój potencjał, żeby w następnym etapie na bazie utworzonego przez Ciebie kodu razem spróbować 
 rozwinąć tę aplikację oraz omówić ewnentualne problemy, które napotkałaś/eś podczas tworzenia kodu aplikacji.
 
+Rozwiązanie zadania chcielibyśmy otrzymać w terminie **7 dni** od momentu jego otrzymania, jeżeli będzie jakiś 
+niewielki poślizg, to nie będziemy dyskwalifikować kandydatury.
+
 ### Opis aplikacji
 
 Potrzebujemy aplikacji napisanej w języku **javascript**, która prezentuje listę samochodów bazując na pliku _data.json_.  
