@@ -6,10 +6,9 @@ Prosimy Cię o wykonanie prostej aplikacji js oraz ostylowanie kilku elementów 
 przy użyciu css lub sass/less.
 Po otrzymaniu Twojego kodu, który ma być odpowiedzią na poniższe zadanie będziemy chcieli ocenić 
 Twój potencjał, żeby w następnym etapie na bazie utworzonego przez Ciebie kodu razem spróbować 
-rozwinąć tę aplikację oraz omówić ewnentualne problemy, które napotkałaś/eś podczas tworzenia kodu aplikacji.
+rozwinąć tą aplikację oraz omówić ewnentualne problemy, które napotkałaś/eś podczas tworzenia kodu aplikacji.
 
-Rozwiązanie zadania chcielibyśmy otrzymać w terminie **7 dni** od momentu jego otrzymania, jeżeli będzie jakiś 
-niewielki poślizg, to nie będziemy dyskwalifikować kandydatury.
+Rozwiązanie zadania chcielibyśmy otrzymać w terminie **7 dni**.
 
 ### Opis aplikacji
 
@@ -34,10 +33,7 @@ który, po kliknięciu powoduje usunięcie auta z listy.
 Aplikacja na tym etapie testowana będzie tylko na przeglądarce chrome, 
 nie uwzględniamy urządzeń mobilnych.
 
-Do napisania aplikacji użyj składni ECMA Script 6 oraz najnowszej wersji jednego z 3 frameworków :
-- React
-- Angular
-- Vue.js
+Do napisania aplikacji użyj składni ECMA Script 6 lub nowszej, przy wykorzystaniu RactaJS lub JavaScript.
 
 ### Wygląd
 
@@ -65,12 +61,16 @@ Podejmiemy się oceny Twojego kodu pod kątem:
 - jeżeli korzystasz z sass'a, do budowania wynikowego css'a idealnie byłoby użyć webpacka, 
 jeżeli użyjesz czegoś innego opisz nam w README jak zbudować aplikację
 - niezbędne będzie użycie AJAX'a do pobrania danych z pliku json
-- jeżeli nie możesz poradzić sobie z jakimś problemem, zapisz go sobie na boku i spróbuj ruszyć dalej,
-być może uda nam się wspólnie rozwiązać dany problem w kolejnym etapie
 - nawet jeżeli aplikacja nie będzie do końca działająca, wyślij nam swój kod
-- jeżeli opis zadania jest dla Ciebie niejasny, napisz na adres ``scrum-websites@edpauto.com``, postaramy
+- jeżeli opis zadania jest dla Ciebie niejasny, napisz na adres ``developers.php@edpauto.com``, postaramy
 się odpowiedzieć na pytania
 - styl kodowania css - preferujemy wcięcia na dwie spacje
 - styl kodowania js - postaraj trzymać się zasad opisanych na ``https://standardjs.com/``  
+
+### Schemat pracy z repozytorium
+
+Prosimy Cię o utworzenie kopii (NIE FORK'a) aktualnego repozytorium na bitbuckecie / githubie / gitlabie oraz wysłanie adresu repozytorium na adres: developers.php@edpauto.com.
+
+Pracuj na gałęzi odchodzącej od mastera. Zespół chciałby wykonać CODE review projektu, który wykonujesz.
   
 Powodzenia
