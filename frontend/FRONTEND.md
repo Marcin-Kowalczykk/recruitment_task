@@ -66,5 +66,11 @@ jeżeli użyjesz czegoś innego opisz nam w README jak zbudować aplikację
 się odpowiedzieć na pytania
 - styl kodowania css - preferujemy wcięcia na dwie spacje
 - styl kodowania js - postaraj trzymać się zasad opisanych na ``https://standardjs.com/``  
+
+### Schemat pracy z repozytorium
+
+Prosimy Cię o utworzenie kopii (NIE FORK'a) aktualnego repozytorium na bitbuckecie / githubie / gitlabie oraz wysłanie adresu repozytorium na adres: developers.php@edpauto.com.
+
+Pracuj na gałęzi odchodzącej od mastera. Zespół chciałby wykonać CODE review projektu, który wykonujesz.
   
 Powodzenia
