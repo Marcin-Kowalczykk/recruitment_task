@@ -8,7 +8,7 @@ Po otrzymaniu Twojego kodu, który ma być odpowiedzią na poniższe zadanie bę
 Twój potencjał, żeby w następnym etapie na bazie utworzonego przez Ciebie kodu razem spróbować 
 rozwinąć tą aplikację oraz omówić ewnentualne problemy, które napotkałaś/eś podczas tworzenia kodu aplikacji.
 
-Rozwiązanie zadania chcielibyśmy otrzymać w terminie **7 dni**.
+Rozwiązanie zadania chcielibyśmy otrzymać w terminie **5 dni**.
 
 ### Opis aplikacji
 
@@ -33,7 +33,7 @@ który, po kliknięciu powoduje usunięcie auta z listy.
 Aplikacja na tym etapie testowana będzie tylko na przeglądarce chrome, 
 nie uwzględniamy urządzeń mobilnych.
 
-Do napisania aplikacji użyj składni ECMA Script 6 lub nowszej, przy wykorzystaniu RactaJS lub JavaScript.
+Do napisania aplikacji użyj składni ECMA Script 6 lub nowszej, przy wykorzystaniu React lub JavaScript.
 
 ### Wygląd
 
