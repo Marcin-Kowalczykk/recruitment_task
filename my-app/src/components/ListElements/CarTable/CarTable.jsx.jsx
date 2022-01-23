@@ -30,6 +30,11 @@ const CarTable = () => {
     fetchCarsDataHandler()
   }, [fetchCarsDataHandler])
 
+  const deletCarHandler = (carId) => {
+    const filteredArray = carsArray.filter((el) => `${el.model}-${el.photo}` !== carId)
+    setCarsArray(filteredArray)
+  }
+
   return (
     <TableContainer>
       <thead>
@@ -39,8 +44,10 @@ const CarTable = () => {
         {carsArray.map((car) => {
           return (
             <CarElement
-              key={`${car.make}-${car.model}-${car.engine}-${car.photo}`}
+              key={`${car.model}-${car.photo}`}
+              id={`${car.model}-${car.photo}`}
               car={car}
+              onDeleteCar={deletCarHandler}
             />
           )
         })}
