@@ -1,7 +1,7 @@
 export const lightTheme = {
   color: {
-    mainBg: '#ebebebe8',
-    headerBg: '#8a03b0e0',
+    mainBg: '#f7f7f7f2',
+    headerBg: '#4d039bb8',
     listLightBg: 'white',
     listDarkBg: '#b478d96b',
     errorColor: '#d50707f5',
