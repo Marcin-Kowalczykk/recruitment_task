@@ -1,10 +1,8 @@
 export { default } from './CarElement'
 export {
-  LiWrapper,
+  ElemWrapper,
+  Td,
   P,
-  FirstArea,
   TitleSection,
-  SecondArea,
-  ThirdArea,
   Button
 } from './styled'

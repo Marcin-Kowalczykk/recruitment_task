@@ -1,48 +1,43 @@
 import styled from 'styled-components'
 
-export const LiWrapper = styled.li`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
+export const ElemWrapper = styled.tr`
+
+  &:nth-child(2n+2) {
+  background: ${(props) => props.theme.color.darkListBg};
+}
 `
 
-export const P = styled.p`
-  color: ${(props) => props.theme.color.mediumFont};
-  font-size: ${(props) => props.theme.fontSize.large};
-  margin-left: 0.3em;
-`
-
-export const FirstArea = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 34vh;
-  margin-left: 1em;
-`
-
-export const TitleSection = styled.section`
+export const TitleSection = styled.div`
   display: flex;
   margin-top: 0.5em;
 `
 
-export const SecondArea = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 31vh;
-  margin-right: 13vh;
+export const Td = styled.td`
+  color: ${(props) => props.theme.color.mediumFont};
+  font-size: ${(props) => props.theme.fontSize.large};
+  padding: 1em;
 `
 
-export const ThirdArea = styled(SecondArea)`
-  width: 41vh;
-  margin-right: 4vh;
+export const P = styled.p`
+  margin-left: 0.3em;
 `
 
 export const Button = styled.button`
   padding: 0.5em;
-  background: purple;
+  background: ${(props) => props.theme.color.lightPurpleBg};
   border: none;
   border-radius: 0.5em;
-  color: white;
-  width: 6em;
+  color: ${(props) => props.theme.color.lightFont};
+  width: 6.5em;
+  margin-left: 0.1em;
+  cursor: pointer;
+  outline: none;
+
+  transition: background 0.5s ease-in;
+
+  &:hover, &:focus {
+    background: ${(props) => props.theme.color.darkPurpleBg};
+  }
+
+
 `

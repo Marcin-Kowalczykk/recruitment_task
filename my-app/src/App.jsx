@@ -4,13 +4,13 @@ import GlobalStyle from './styles/GlobalStyle'
 import { lightTheme } from './styles/theme'
 import { ThemeProvider } from 'styled-components'
 
-import CarList from './components/ListElements/CarList'
+import CarTable from './components/ListElements/CarTable'
 
 function App () {
   return (
     <ThemeProvider theme={lightTheme}>
       <GlobalStyle />
-      <CarList />
+      <CarTable />
     </ThemeProvider>
   )
 }

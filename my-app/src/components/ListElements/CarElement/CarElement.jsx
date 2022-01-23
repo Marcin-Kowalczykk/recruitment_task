@@ -1,19 +1,17 @@
 import React from 'react'
 
 import {
-  LiWrapper,
+  ElemWrapper,
+  Td,
   P,
-  FirstArea,
   TitleSection,
-  SecondArea,
-  ThirdArea,
   Button
 } from '.'
 
 const CarElement = () => {
   return (
-    <LiWrapper>
-      <FirstArea>
+    <ElemWrapper>
+      <Td>
         <section>
           <img src='' alt='zdjęcie samochodu' />
         </section>
@@ -22,16 +20,17 @@ const CarElement = () => {
           <P>Golf</P>
           <P>1.6 TDI</P>
         </TitleSection>
-      </FirstArea>
-      <SecondArea>
-        <P>Golf IV</P>
-        <P>1.6 TDI</P>
-      </SecondArea>
-      <ThirdArea>
-        <P>Tak</P>
-        <Button>Usuń</Button>
-      </ThirdArea>
-    </LiWrapper>
+      </Td>
+      <Td>Golf IV</Td>
+      <Td>1.6 TDI</Td>
+      <Td>Tak</Td>
+      <Td>
+        <section>
+          <Button>Dostępność</Button>
+          <Button>Usuń</Button>
+        </section>
+      </Td>
+    </ElemWrapper>
   )
 }
 
