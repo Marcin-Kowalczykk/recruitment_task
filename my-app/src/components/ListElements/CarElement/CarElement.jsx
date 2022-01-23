@@ -7,17 +7,13 @@ import {
   Img,
   TitleSection,
   Button
-} from '.'
+} from './styled'
 
-const CarElement = ({ make, model, engine, availability, photo }) => {
-  let carAvailability = 'Nie'
-
-  if (availability === true) {
-    carAvailability = 'Tak'
-  }
+const CarElement = ({ car }) => {
+  const { make, model, engine, availability, photo } = car
 
   return (
-    <ElemWrapper>
+    <ElemWrapper isAvaible={availability}>
       <Td>
         <section>
           <Img src={photo} alt={`Zdjęcie samochodu: ${make} ${model} ${engine}`} />
@@ -30,7 +26,7 @@ const CarElement = ({ make, model, engine, availability, photo }) => {
       </Td>
       <Td>{model}</Td>
       <Td>{engine}</Td>
-      <Td>{carAvailability}</Td>
+      <Td>{availability ? 'Tak' : 'Nie'}</Td>
       <Td>
         <section>
           <Button>Dostępność</Button>

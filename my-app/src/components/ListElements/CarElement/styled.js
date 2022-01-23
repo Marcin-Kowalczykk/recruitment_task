@@ -2,9 +2,12 @@ import styled from 'styled-components'
 
 export const ElemWrapper = styled.tr`
 
-  &:nth-child(2n+2) {
+  /* Na początku myślałem, że bez względu na dostępność co drugi wiersz ma się lekko podświetlać:
+   &:nth-child(2n+2) {
   background: ${(props) => props.theme.color.darkListBg};
-}
+} */
+
+background: ${(props) => props.isAvaible ? props.theme.color.lightListBg : props.theme.color.darkListBg};
 `
 
 export const Td = styled.td`
