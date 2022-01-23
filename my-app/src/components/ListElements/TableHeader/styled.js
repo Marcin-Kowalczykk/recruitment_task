@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Th = styled.th`
-  padding: 1em;
+  padding: 1em 1em 1em 2em;
   background: ${(props) => props.theme.color.lightPurpleBg};
   color: ${(props) => props.theme.color.lightFont};
   font-size: ${(props) => props.theme.fontSize.extraLarge};

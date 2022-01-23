@@ -4,26 +4,33 @@ import {
   ElemWrapper,
   Td,
   P,
+  Img,
   TitleSection,
   Button
 } from '.'
 
-const CarElement = () => {
+const CarElement = ({ make, model, engine, availability, photo }) => {
+  let carAvailability = 'Nie'
+
+  if (availability === true) {
+    carAvailability = 'Tak'
+  }
+
   return (
     <ElemWrapper>
       <Td>
         <section>
-          <img src='' alt='zdjęcie samochodu' />
+          <Img src={photo} alt={`Zdjęcie samochodu: ${make} ${model} ${engine}`} />
         </section>
         <TitleSection>
-          <P>Volkswagen</P>
-          <P>Golf</P>
-          <P>1.6 TDI</P>
+          <P>{make}</P>
+          <P>{model}</P>
+          <P>{engine}</P>
         </TitleSection>
       </Td>
-      <Td>Golf IV</Td>
-      <Td>1.6 TDI</Td>
-      <Td>Tak</Td>
+      <Td>{model}</Td>
+      <Td>{engine}</Td>
+      <Td>{carAvailability}</Td>
       <Td>
         <section>
           <Button>Dostępność</Button>
