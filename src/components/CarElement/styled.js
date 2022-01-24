@@ -33,14 +33,22 @@ export const TitleSection = styled.div`
   margin-top: 0.5em;
 `
 
+export const ButtonsSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+`
+
 export const Button = styled.button`
   padding: 0.8em;
   background: ${(props) => props.theme.color.lightPurpleBg};
   border: none;
   border-radius: 1em;
   color: ${(props) => props.theme.color.white};
-  width: 7em;
-  margin-left: 0.5em;
+  width: 8.5em;
+  /* margin: 0.3em; */
+  margin-top: 1em;
   cursor: pointer;
   outline: none;
 

@@ -5,6 +5,7 @@ import {
   Td,
   Img,
   TitleSection,
+  ButtonsSection,
   Button
 } from './styled'
 
@@ -31,12 +32,12 @@ const CarElement = ({ car, id, onDeleteCar }) => {
       <Td>{engine}</Td>
       <Td>{currentAvailability ? 'Tak' : 'Nie'}</Td>
       <Td>
-        <section>
+        <ButtonsSection>
           <Button onClick={() => setCurrentAvailability((prev) => (!prev))}>
-            Dostępność
+            Dostępność <i className='fas fa-exchange-alt' />
           </Button>
-          <Button onClick={() => onDeleteCar(id)}>Usuń</Button>
-        </section>
+          <Button onClick={() => onDeleteCar(id)}>Usuń <i className='fas fa-trash-alt' /></Button>
+        </ButtonsSection>
       </Td>
     </ElemWrapper>
   )
