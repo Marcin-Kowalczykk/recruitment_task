@@ -1,13 +1,6 @@
 import React, { useState } from 'react'
 
-import {
-  ElemWrapper,
-  Td,
-  Img,
-  TitleSection,
-  ButtonsSection,
-  Button
-} from './styled'
+import './CarElement.styles.scss'
 
 const CarElement = ({ car, id, onDeleteCar }) => {
   const { make, model, engine, availability, photo } = car
@@ -15,31 +8,32 @@ const CarElement = ({ car, id, onDeleteCar }) => {
   const [isAvailable, setIsAvailable] = useState(availability)
 
   return (
-    <ElemWrapper isAvailable={isAvailable}>
-      <Td>
+    <tr className={`elem-wrapper ${isAvailable ? 'available' : 'not-available'}`}>
+      <td className='elem-row'>
         <section>
           {photo &&
-            <Img
+            <img
+              className='img'
               src={photo}
               alt={`Zdjęcie samochodu: ${make} ${model} ${engine}`}
             />}
         </section>
-        <TitleSection>
+        <section className='name-wrapper'>
           <p>{`${make} ${model} ${engine}`}</p>
-        </TitleSection>
-      </Td>
-      <Td>{model}</Td>
-      <Td>{engine}</Td>
-      <Td>{isAvailable ? 'Tak' : 'Nie'}</Td>
-      <Td>
-        <ButtonsSection>
-          <Button onClick={() => setIsAvailable((prev) => (!prev))}>
+        </section>
+      </td>
+      <td className='elem-row'>{model}</td>
+      <td className='elem-row'>{engine}</td>
+      <td className='elem-row'>{isAvailable ? 'Tak' : 'Nie'}</td>
+      <td className='elem-row'>
+        <section className='buttons-wrapper'>
+          <button className='button' onClick={() => setIsAvailable((prev) => (!prev))}>
             Dostępność <i className='fas fa-exchange-alt' />
-          </Button>
-          <Button onClick={() => onDeleteCar(id)}>Usuń <i className='fas fa-trash-alt' /></Button>
-        </ButtonsSection>
-      </Td>
-    </ElemWrapper>
+          </button>
+          <button className='button' onClick={() => onDeleteCar(id)}>Usuń <i className='fas fa-trash-alt' /></button>
+        </section>
+      </td>
+    </tr>
   )
 }
 

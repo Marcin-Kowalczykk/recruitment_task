@@ -1,0 +1,20 @@
+.header-row {
+  padding: 1em 1em 1em 2em;
+  background: var(--color-lightPurpleBg);
+  color: var(--color-white);
+  font-size: var(--font-extraLarge);
+  font-weight: bold;
+  
+  &:first-child {
+    border-top-left-radius: 1em;
+  }
+  
+  &:last-child {
+    border-top-right-radius: 1em;
+  }
+}
+
+
+
+
+  
