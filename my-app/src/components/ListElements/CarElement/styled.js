@@ -13,7 +13,7 @@ background: ${(props) => props.isAvaible ? props.theme.color.lightListBg : props
 export const Td = styled.td`
   color: ${(props) => props.theme.color.mediumFont};
   font-size: ${(props) => props.theme.fontSize.large};
-  padding: 0.5em 0 0.5em 2em;
+  padding: 1em 0 1em 2.5em;
   vertical-align: middle;
 `
 
