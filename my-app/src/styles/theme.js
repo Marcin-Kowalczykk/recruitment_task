@@ -4,8 +4,8 @@ export const lightTheme = {
     lightPurpleBg: '#8138ffe0',
     darkPurpleBg: '#6b17fd',
     lightListBg: 'white',
-    darkListBg: '#fae5e538',
-    errorColor: '#d50707f5',
+    darkListBg: '#f7cfcf38',
+    errorColor: '#fe3939b3',
     lightFont: 'white',
     mediumFont: '#000000a6',
     darkFont: 'black'

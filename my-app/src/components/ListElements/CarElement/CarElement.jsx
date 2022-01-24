@@ -18,12 +18,13 @@ const CarElement = ({ car, id, onDeleteCar }) => {
     <ElemWrapper isAvaible={currentAvailability}>
       <Td>
         <section>
-          <Img src={photo} alt={`Zdjęcie samochodu: ${make} ${model} ${engine}`} />
+          <Img
+            src={photo}
+            alt={`Zdjęcie samochodu: ${make} ${model} ${engine}`}
+          />
         </section>
         <TitleSection>
-          <P>{make}</P>
-          <P>{model}</P>
-          <P>{engine}</P>
+          <p>{`${make} ${model} ${engine}`}</p>
         </TitleSection>
       </Td>
       <Td>{model}</Td>
