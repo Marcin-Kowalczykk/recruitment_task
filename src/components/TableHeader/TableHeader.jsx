@@ -1,15 +1,12 @@
 import React from 'react'
+import { TABLE_HEADINGS } from './utils'
 
 import { Th } from './styled'
 
-const TableHeader = () => {
+const TableHeader = ({ headings = TABLE_HEADINGS }) => {
   return (
     <tr>
-      <Th>Nazwa</Th>
-      <Th>Model</Th>
-      <Th>Silnik</Th>
-      <Th>Dostępność</Th>
-      <Th>Akcje</Th>
+      {headings.map(({ name }) => <Th key={name}>{name}</Th>)}
     </tr>
 
   )
