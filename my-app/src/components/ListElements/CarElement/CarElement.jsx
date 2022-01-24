@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import {
   ElemWrapper,
   Td,
-  P,
   Img,
   TitleSection,
   Button

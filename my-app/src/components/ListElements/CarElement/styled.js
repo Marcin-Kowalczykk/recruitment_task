@@ -17,10 +17,6 @@ export const Td = styled.td`
   vertical-align: middle;
 `
 
-export const P = styled.p`
-  margin-left: 0.3em;
-`
-
 export const Img = styled.img`
   width: 320px;
   height: 180px;
