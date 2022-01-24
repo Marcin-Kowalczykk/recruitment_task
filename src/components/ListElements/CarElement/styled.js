@@ -7,11 +7,11 @@ export const ElemWrapper = styled.tr`
   background: ${(props) => props.theme.color.darkListBg};
 } */
 
-background: ${(props) => props.isAvaible ? props.theme.color.lightListBg : props.theme.color.darkListBg};
+background: ${(props) => props.isAvaible ? props.theme.color.white : props.theme.color.error};
 `
 
 export const Td = styled.td`
-  color: ${(props) => props.theme.color.mediumFont};
+  color: ${(props) => props.theme.color.darkOpacity};
   font-size: ${(props) => props.theme.fontSize.large};
   padding: 1em 0 1em 2.5em;
   vertical-align: middle;
@@ -38,7 +38,7 @@ export const Button = styled.button`
   background: ${(props) => props.theme.color.lightPurpleBg};
   border: none;
   border-radius: 1em;
-  color: ${(props) => props.theme.color.lightFont};
+  color: ${(props) => props.theme.color.white};
   width: 7em;
   margin-left: 0.5em;
   cursor: pointer;

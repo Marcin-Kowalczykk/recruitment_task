@@ -6,7 +6,7 @@ const animationShow = keyframes`
 `
 
 export const TableContainer = styled.table`
-  background: ${(props) => props.theme.color.lightListBg};
+  background: ${(props) => props.theme.color.white};
   border-radius: 1em;
   margin: 2.5%;
   width: 95%;

@@ -3,12 +3,10 @@ export const lightTheme = {
     mainBg: '#f7f7f7f2',
     lightPurpleBg: '#8138ffe0',
     darkPurpleBg: '#6b17fd',
-    lightListBg: 'white',
-    darkListBg: '#f7cfcf38',
-    errorColor: '#fe3939b3',
-    lightFont: 'white',
-    mediumFont: '#000000a6',
-    darkFont: 'black'
+    error: '#f7cfcf38', // changed
+    white: 'white',
+    darkOpacity: '#000000a6',
+    black: 'black'
   },
   fontSize: {
     extraSmall: '12px',
