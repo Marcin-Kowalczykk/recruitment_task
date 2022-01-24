@@ -1,8 +1,8 @@
 import React from 'react'
+import { ThemeProvider } from 'styled-components'
 
 import GlobalStyle from './styles/GlobalStyle'
 import { lightTheme } from './styles/theme'
-import { ThemeProvider } from 'styled-components'
 
 import CarTable from './components/CarTable'
 

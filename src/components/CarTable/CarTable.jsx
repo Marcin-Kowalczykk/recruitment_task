@@ -6,16 +6,14 @@ import { TableContainer } from './styled'
 import TableHeader from '../TableHeader'
 import CarElement from '../CarElement'
 
+const CARS_DATA_PATH = './data.json'
+
 const CarTable = () => {
   const [carsArray, setCarsArray] = useState([])
 
-  const fetchCarsDataHandler = useCallback(async () => {
+  const fetchCarsData = useCallback(async () => {
     try {
-      const response = await axios.get('./data.json')
-
-      if (response.status !== 200) {
-        throw new Error(`${response.status} error text: ${response.statusText}`)
-      }
+      const response = await axios.get(CARS_DATA_PATH)
 
       const data = await response.data
       const carData = await data.offers
@@ -27,12 +25,12 @@ const CarTable = () => {
   }, [])
 
   useEffect(() => {
-    fetchCarsDataHandler()
-  }, [fetchCarsDataHandler])
+    fetchCarsData()
+  }, [fetchCarsData])
 
-  const deletCarHandler = (carId) => {
-    const filteredArray = carsArray.filter((el) => `${el.model}-${el.photo}` !== carId)
-    setCarsArray(filteredArray)
+  const deleteCarHandler = (id) => {
+    const filteredCars = carsArray.filter((el) => `${el.model}-${el.photo}` !== id)
+    setCarsArray(filteredCars)
   }
 
   return (
@@ -47,7 +45,7 @@ const CarTable = () => {
               key={`${car.model}-${car.photo}`}
               id={`${car.model}-${car.photo}`}
               car={car}
-              onDeleteCar={deletCarHandler}
+              onDeleteCar={deleteCarHandler}
             />
           )
         })}

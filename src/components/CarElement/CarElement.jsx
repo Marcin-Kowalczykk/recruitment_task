@@ -12,10 +12,10 @@ import {
 const CarElement = ({ car, id, onDeleteCar }) => {
   const { make, model, engine, availability, photo } = car
 
-  const [currentAvailability, setCurrentAvailability] = useState(availability)
+  const [isAvailable, setIsAvailable] = useState(availability)
 
   return (
-    <ElemWrapper isAvaible={currentAvailability}>
+    <ElemWrapper isAvailable={isAvailable}>
       <Td>
         <section>
           {photo &&
@@ -30,10 +30,10 @@ const CarElement = ({ car, id, onDeleteCar }) => {
       </Td>
       <Td>{model}</Td>
       <Td>{engine}</Td>
-      <Td>{currentAvailability ? 'Tak' : 'Nie'}</Td>
+      <Td>{isAvailable ? 'Tak' : 'Nie'}</Td>
       <Td>
         <ButtonsSection>
-          <Button onClick={() => setCurrentAvailability((prev) => (!prev))}>
+          <Button onClick={() => setIsAvailable((prev) => (!prev))}>
             Dostępność <i className='fas fa-exchange-alt' />
           </Button>
           <Button onClick={() => onDeleteCar(id)}>Usuń <i className='fas fa-trash-alt' /></Button>

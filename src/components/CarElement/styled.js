@@ -7,7 +7,7 @@ export const ElemWrapper = styled.tr`
   background: ${(props) => props.theme.color.darkListBg};
 } */
 
-background: ${(props) => props.isAvaible ? props.theme.color.white : props.theme.color.error};
+background: ${(props) => props.isAvailable ? props.theme.color.white : props.theme.color.error};
 `
 
 export const Td = styled.td`
@@ -46,7 +46,7 @@ export const Button = styled.button`
   border: none;
   border-radius: 1em;
   color: ${(props) => props.theme.color.white};
-  width: 8.5em;
+  width: 9em;
   /* margin: 0.3em; */
   margin-top: 1em;
   cursor: pointer;
