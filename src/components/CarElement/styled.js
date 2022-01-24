@@ -7,12 +7,12 @@ export const ElemWrapper = styled.tr`
   background: ${(props) => props.theme.color.darkListBg};
 } */
 
-background: ${(props) => props.isAvailable ? props.theme.color.white : props.theme.color.error};
+background: ${({ isAvailable, theme }) => theme.color[isAvailable ? 'white' : 'error']};
 `
 
 export const Td = styled.td`
-  color: ${(props) => props.theme.color.darkOpacity};
-  font-size: ${(props) => props.theme.fontSize.large};
+  color: ${({ theme }) => theme.color.darkOpacity};
+  font-size: ${({ theme }) => theme.fontSize.large};
   padding: 1em 0 1em 2.5em;
   vertical-align: middle;
 `
@@ -42,12 +42,11 @@ export const ButtonsSection = styled.section`
 
 export const Button = styled.button`
   padding: 0.8em;
-  background: ${(props) => props.theme.color.lightPurpleBg};
+  background: ${({ theme }) => theme.color.lightPurpleBg};
   border: none;
   border-radius: 1em;
-  color: ${(props) => props.theme.color.white};
+  color: ${({ theme }) => theme.color.white};
   width: 9em;
-  /* margin: 0.3em; */
   margin-top: 1em;
   cursor: pointer;
   outline: none;
@@ -55,7 +54,7 @@ export const Button = styled.button`
   transition: background 0.5s ease-in, padding 0.3s linear;
 
   &:hover, &:focus {
-    background: ${(props) => props.theme.color.darkPurpleBg};
+    background: ${({ theme }) => theme.color.darkPurpleBg};
   }
 
   &:active {

@@ -13,5 +13,13 @@ export const lightTheme = {
     small: '14px',
     large: '18px',
     extraLarge: '22px'
+  },
+  ui: {
+    borderRadius: {
+      normal: '1em'
+    },
+    boxShadow: {
+      primary: 'rgba(149, 157, 165, 0.2) 0px 8px 24px'
+    }
   }
 }
