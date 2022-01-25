@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './styles/GlobalStyle'
 import { lightTheme } from './styles/theme'
 
-import CarTable from './components/CarTable'
+import CarTable from './components/CarTableElements/CarTable'
 
 function App () {
   return (

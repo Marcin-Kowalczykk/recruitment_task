@@ -5,9 +5,10 @@ import {
   Td,
   Img,
   TitleSection,
-  ButtonsSection,
-  Button
+  ButtonsSection
 } from './styled'
+
+import BoxButton from '../../ui/BoxButton'
 
 const CarElement = ({ car, id, onDeleteCar }) => {
   const { make, model, engine, availability, photo } = car
@@ -33,10 +34,10 @@ const CarElement = ({ car, id, onDeleteCar }) => {
       <Td>{isAvailable ? 'Tak' : 'Nie'}</Td>
       <Td>
         <ButtonsSection>
-          <Button onClick={() => setIsAvailable((prev) => (!prev))}>
+          <BoxButton onClick={() => setIsAvailable((prev) => (!prev))}>
             Dostępność <i className='fas fa-exchange-alt' />
-          </Button>
-          <Button onClick={() => onDeleteCar(id)}>Usuń <i className='fas fa-trash-alt' /></Button>
+          </BoxButton>
+          <BoxButton onClick={() => onDeleteCar(id)}>Usuń <i className='fas fa-trash-alt' /></BoxButton>
         </ButtonsSection>
       </Td>
     </ElemWrapper>
