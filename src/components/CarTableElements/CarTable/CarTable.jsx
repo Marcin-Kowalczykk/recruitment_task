@@ -1,32 +1,21 @@
-import React, { useState, useEffect, useCallback } from 'react'
-import axios from 'axios'
+import React, { useState, useEffect } from 'react'
+// import axios from 'axios'
 
 import { TableContainer } from './styled'
 
 import TableHeader from '../TableHeader'
 import CarElement from '../CarElement'
+import useFetchData from '../../../hooks/useFetchData'
 
 const CARS_DATA_PATH = './data.json'
 
 const CarTable = () => {
   const [carsArray, setCarsArray] = useState([])
-
-  const fetchCarsData = useCallback(async () => {
-    try {
-      const response = await axios.get(CARS_DATA_PATH)
-
-      const data = await response.data
-      const carData = await data.offers
-
-      setCarsArray(carData)
-    } catch (error) {
-      console.log(error)
-    }
-  }, [])
+  const fetchData = useFetchData(CARS_DATA_PATH, setCarsArray)
 
   useEffect(() => {
-    fetchCarsData()
-  }, [fetchCarsData])
+    fetchData()
+  }, [fetchData])
 
   const deleteCarHandler = (id) => {
     const filteredCars = carsArray.filter((el) => `${el.model}-${el.photo}` !== id)
