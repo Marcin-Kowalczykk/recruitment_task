@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import axios from 'axios'
 
-import './CarTable.style.scss'
+import { TableContainer } from './styled'
 
 import TableHeader from '../TableHeader'
 import CarElement from '../CarElement'
@@ -34,7 +34,7 @@ const CarTable = () => {
   }
 
   return (
-    <table className='table-container'>
+    <TableContainer>
       <thead>
         <TableHeader />
       </thead>
@@ -50,7 +50,7 @@ const CarTable = () => {
           )
         })}
       </tbody>
-    </table>
+    </TableContainer>
   )
 }
 
